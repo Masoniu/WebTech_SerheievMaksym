@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Додавання викладача</title>
+</head>
+<body>
+  <main>
+    <h1>Форма для додавання викладача</h1>
+    <hr>
+    <form action="#" method="post" accept-charset="UTF-8">
+      <h2>Основна інформація</h2>
+      <div>
+        <label for="fullname">Повне ім'я:</label>
+        <input type="text" id="fullname" name="fullname" required title="Введіть повне ім’я">
+      </div>
+      <div>
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+          <option value="чоловіча">Чоловіча</option>
+          <option value="жіноча">Жіноча</option>
+          <option value="інша">Інша</option>
+        </select>
+      </div>
+      <div>
+        <label for="birthdate">Дата народження:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+      </div>
+
+      <h2>Контактні дані</h2>
+      <hr>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required title="Введіть правильний email">
+      </div>
+      <div>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required title="Введіть номер телефону">
+      </div>
+
+      <h2>Додаткова інформація</h2>
+      <hr>
+      <div>
+        <label for="bgcolor">Бажаний колір фону:</label>
+        <input type="color" id="bgcolor" name="bgcolor" value="#ffffff">
+      </div>
+      <div>
+        <label for="country">Країна:</label>
+        <input type="text" id="country" name="country" required title="Введіть вашу країну">
+      </div>
+      <div>
+        <label for="city">Місто:</label>
+        <input type="text" id="city" name="city" required title="Введіть ваше місто">
+      </div>
+      
+      <div>
+        <fieldset>
+          <legend>Коментар</legend>
+          <textarea id="comment" name="comment" rows="5" cols="30"></textarea>
+        </fieldset>
+      </div>
+
+      <div>
+        <button type="submit">Додати викладача</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
